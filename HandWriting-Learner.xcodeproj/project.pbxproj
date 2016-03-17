@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B50C71641C8F1BA7003D6EC1 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C71631C8F1BA7003D6EC1 /* SetupViewController.swift */; };
+		B50C71721C8F38A3003D6EC1 /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C71661C8F38A3003D6EC1 /* Brandon_bld.otf */; };
+		B50C71731C8F38A3003D6EC1 /* Brandon_bld_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C71671C8F38A3003D6EC1 /* Brandon_bld_it.otf */; };
+		B50C71741C8F38A3003D6EC1 /* Brandon_blk.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C71681C8F38A3003D6EC1 /* Brandon_blk.otf */; };
+		B50C71751C8F38A3003D6EC1 /* Brandon_blk_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C71691C8F38A3003D6EC1 /* Brandon_blk_it.otf */; };
+		B50C71761C8F38A3003D6EC1 /* Brandon_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C716A1C8F38A3003D6EC1 /* Brandon_light.otf */; };
+		B50C71771C8F38A3003D6EC1 /* Brandon_light_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C716B1C8F38A3003D6EC1 /* Brandon_light_it.otf */; };
+		B50C71781C8F38A3003D6EC1 /* Brandon_med.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C716C1C8F38A3003D6EC1 /* Brandon_med.otf */; };
+		B50C71791C8F38A3003D6EC1 /* Brandon_med_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C716D1C8F38A3003D6EC1 /* Brandon_med_it.otf */; };
+		B50C717A1C8F38A3003D6EC1 /* Brandon_reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C716E1C8F38A3003D6EC1 /* Brandon_reg.otf */; };
+		B50C717B1C8F38A3003D6EC1 /* Brandon_reg_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C716F1C8F38A3003D6EC1 /* Brandon_reg_it.otf */; };
+		B50C717C1C8F38A3003D6EC1 /* Brandon_thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C71701C8F38A3003D6EC1 /* Brandon_thin.otf */; };
+		B50C717D1C8F38A3003D6EC1 /* Brandon_thin_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50C71711C8F38A3003D6EC1 /* Brandon_thin_it.otf */; };
+		B5E8EF721C84A32800D977DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF711C84A32800D977DF /* AppDelegate.swift */; };
+		B5E8EF741C84A32800D977DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF731C84A32800D977DF /* ViewController.swift */; };
+		B5E8EF771C84A32800D977DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E8EF751C84A32800D977DF /* Main.storyboard */; };
+		B5E8EF791C84A32800D977DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E8EF781C84A32800D977DF /* Assets.xcassets */; };
+		B5E8EF7C1C84A32800D977DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E8EF7A1C84A32800D977DF /* LaunchScreen.storyboard */; };
+		B5E8EF871C84A32800D977DF /* HandWriting_LearnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF861C84A32800D977DF /* HandWriting_LearnerTests.swift */; };
+		B5E8EF931C84A34600D977DF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF921C84A34600D977DF /* HistoryTableViewCell.swift */; };
+		B5E8EF9C1C84A35A00D977DF /* FFNN+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF941C84A35A00D977DF /* FFNN+Storage.swift */; };
+		B5E8EF9D1C84A35A00D977DF /* FFNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF951C84A35A00D977DF /* FFNN.swift */; };
+		B5E8EF9E1C84A35A00D977DF /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF961C84A35A00D977DF /* Matrix.swift */; };
+		B5E8EF9F1C84A35A00D977DF /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF971C84A35A00D977DF /* Operations.swift */; };
+		B5E8EFA01C84A35A00D977DF /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF981C84A35A00D977DF /* Random.swift */; };
+		B5E8EFA11C84A35A00D977DF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF991C84A35A00D977DF /* README.md */; };
+		B5E8EFA21C84A35A00D977DF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF9A1C84A35A00D977DF /* Storage.swift */; };
+		B5E8EFA31C84A35A00D977DF /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EF9B1C84A35A00D977DF /* Vector.swift */; };
+		B5E8EFA61C84A3AF00D977DF /* UIImage+Processing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EFA51C84A3AF00D977DF /* UIImage+Processing.swift */; };
+		B5E8EFA91C84A45700D977DF /* FFNNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8EFA81C84A45700D977DF /* FFNNManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5E8EF831C84A32800D977DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5E8EF661C84A32800D977DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5E8EF6D1C84A32800D977DF;
+			remoteInfo = "HandWriting-Learner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B50C71631C8F1BA7003D6EC1 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		B50C71661C8F38A3003D6EC1 /* Brandon_bld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld.otf; sourceTree = "<group>"; };
+		B50C71671C8F38A3003D6EC1 /* Brandon_bld_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld_it.otf; sourceTree = "<group>"; };
+		B50C71681C8F38A3003D6EC1 /* Brandon_blk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk.otf; sourceTree = "<group>"; };
+		B50C71691C8F38A3003D6EC1 /* Brandon_blk_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk_it.otf; sourceTree = "<group>"; };
+		B50C716A1C8F38A3003D6EC1 /* Brandon_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light.otf; sourceTree = "<group>"; };
+		B50C716B1C8F38A3003D6EC1 /* Brandon_light_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light_it.otf; sourceTree = "<group>"; };
+		B50C716C1C8F38A3003D6EC1 /* Brandon_med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med.otf; sourceTree = "<group>"; };
+		B50C716D1C8F38A3003D6EC1 /* Brandon_med_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med_it.otf; sourceTree = "<group>"; };
+		B50C716E1C8F38A3003D6EC1 /* Brandon_reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_reg.otf; sourceTree = "<group>"; };
+		B50C716F1C8F38A3003D6EC1 /* Brandon_reg_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_reg_it.otf; sourceTree = "<group>"; };
+		B50C71701C8F38A3003D6EC1 /* Brandon_thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_thin.otf; sourceTree = "<group>"; };
+		B50C71711C8F38A3003D6EC1 /* Brandon_thin_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_thin_it.otf; sourceTree = "<group>"; };
+		B5E8EF6E1C84A32800D977DF /* HandWriting-Learner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HandWriting-Learner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E8EF711C84A32800D977DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5E8EF731C84A32800D977DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5E8EF761C84A32800D977DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5E8EF781C84A32800D977DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5E8EF7B1C84A32800D977DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5E8EF7D1C84A32800D977DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E8EF821C84A32800D977DF /* HandWriting-LearnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandWriting-LearnerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E8EF861C84A32800D977DF /* HandWriting_LearnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandWriting_LearnerTests.swift; sourceTree = "<group>"; };
+		B5E8EF881C84A32800D977DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E8EF921C84A34600D977DF /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		B5E8EF941C84A35A00D977DF /* FFNN+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FFNN+Storage.swift"; sourceTree = "<group>"; };
+		B5E8EF951C84A35A00D977DF /* FFNN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFNN.swift; sourceTree = "<group>"; };
+		B5E8EF961C84A35A00D977DF /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		B5E8EF971C84A35A00D977DF /* Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
+		B5E8EF981C84A35A00D977DF /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		B5E8EF991C84A35A00D977DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B5E8EF9A1C84A35A00D977DF /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		B5E8EF9B1C84A35A00D977DF /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		B5E8EFA51C84A3AF00D977DF /* UIImage+Processing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Processing.swift"; sourceTree = "<group>"; };
+		B5E8EFA81C84A45700D977DF /* FFNNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFNNManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5E8EF6B1C84A32800D977DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5E8EF7F1C84A32800D977DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B50C71651C8F38A3003D6EC1 /* Brandon Grotesque */ = {
+			isa = PBXGroup;
+			children = (
+				B50C71661C8F38A3003D6EC1 /* Brandon_bld.otf */,
+				B50C71671C8F38A3003D6EC1 /* Brandon_bld_it.otf */,
+				B50C71681C8F38A3003D6EC1 /* Brandon_blk.otf */,
+				B50C71691C8F38A3003D6EC1 /* Brandon_blk_it.otf */,
+				B50C716A1C8F38A3003D6EC1 /* Brandon_light.otf */,
+				B50C716B1C8F38A3003D6EC1 /* Brandon_light_it.otf */,
+				B50C716C1C8F38A3003D6EC1 /* Brandon_med.otf */,
+				B50C716D1C8F38A3003D6EC1 /* Brandon_med_it.otf */,
+				B50C716E1C8F38A3003D6EC1 /* Brandon_reg.otf */,
+				B50C716F1C8F38A3003D6EC1 /* Brandon_reg_it.otf */,
+				B50C71701C8F38A3003D6EC1 /* Brandon_thin.otf */,
+				B50C71711C8F38A3003D6EC1 /* Brandon_thin_it.otf */,
+			);
+			path = "Brandon Grotesque";
+			sourceTree = "<group>";
+		};
+		B5E8EF651C84A32800D977DF = {
+			isa = PBXGroup;
+			children = (
+				B50C71651C8F38A3003D6EC1 /* Brandon Grotesque */,
+				B5E8EF701C84A32800D977DF /* HandWriting-Learner */,
+				B5E8EF851C84A32800D977DF /* HandWriting-LearnerTests */,
+				B5E8EF6F1C84A32800D977DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5E8EF6F1C84A32800D977DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8EF6E1C84A32800D977DF /* HandWriting-Learner.app */,
+				B5E8EF821C84A32800D977DF /* HandWriting-LearnerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5E8EF701C84A32800D977DF /* HandWriting-Learner */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8EFAA1C84A45A00D977DF /* NeuronalNetworkManager */,
+				B5E8EFA71C84A3D400D977DF /* UIImage-Extension */,
+				B5E8EFA41C84A35F00D977DF /* Swift-AI */,
+				B5E8EF911C84A33D00D977DF /* HistoryCell */,
+				B5E8EF711C84A32800D977DF /* AppDelegate.swift */,
+				B50C71631C8F1BA7003D6EC1 /* SetupViewController.swift */,
+				B5E8EF731C84A32800D977DF /* ViewController.swift */,
+				B5E8EF751C84A32800D977DF /* Main.storyboard */,
+				B5E8EF781C84A32800D977DF /* Assets.xcassets */,
+				B5E8EF7A1C84A32800D977DF /* LaunchScreen.storyboard */,
+				B5E8EF7D1C84A32800D977DF /* Info.plist */,
+			);
+			path = "HandWriting-Learner";
+			sourceTree = "<group>";
+		};
+		B5E8EF851C84A32800D977DF /* HandWriting-LearnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8EF861C84A32800D977DF /* HandWriting_LearnerTests.swift */,
+				B5E8EF881C84A32800D977DF /* Info.plist */,
+			);
+			path = "HandWriting-LearnerTests";
+			sourceTree = "<group>";
+		};
+		B5E8EF911C84A33D00D977DF /* HistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8EF921C84A34600D977DF /* HistoryTableViewCell.swift */,
+			);
+			name = HistoryCell;
+			sourceTree = "<group>";
+		};
+		B5E8EFA41C84A35F00D977DF /* Swift-AI */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8EF941C84A35A00D977DF /* FFNN+Storage.swift */,
+				B5E8EF951C84A35A00D977DF /* FFNN.swift */,
+				B5E8EF961C84A35A00D977DF /* Matrix.swift */,
+				B5E8EF971C84A35A00D977DF /* Operations.swift */,
+				B5E8EF981C84A35A00D977DF /* Random.swift */,
+				B5E8EF991C84A35A00D977DF /* README.md */,
+				B5E8EF9A1C84A35A00D977DF /* Storage.swift */,
+				B5E8EF9B1C84A35A00D977DF /* Vector.swift */,
+			);
+			name = "Swift-AI";
+			sourceTree = "<group>";
+		};
+		B5E8EFA71C84A3D400D977DF /* UIImage-Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8EFA51C84A3AF00D977DF /* UIImage+Processing.swift */,
+			);
+			name = "UIImage-Extension";
+			sourceTree = "<group>";
+		};
+		B5E8EFAA1C84A45A00D977DF /* NeuronalNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8EFA81C84A45700D977DF /* FFNNManager.swift */,
+			);
+			name = NeuronalNetworkManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5E8EF6D1C84A32800D977DF /* HandWriting-Learner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5E8EF8B1C84A32800D977DF /* Build configuration list for PBXNativeTarget "HandWriting-Learner" */;
+			buildPhases = (
+				B5E8EF6A1C84A32800D977DF /* Sources */,
+				B5E8EF6B1C84A32800D977DF /* Frameworks */,
+				B5E8EF6C1C84A32800D977DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HandWriting-Learner";
+			productName = "HandWriting-Learner";
+			productReference = B5E8EF6E1C84A32800D977DF /* HandWriting-Learner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5E8EF811C84A32800D977DF /* HandWriting-LearnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5E8EF8E1C84A32800D977DF /* Build configuration list for PBXNativeTarget "HandWriting-LearnerTests" */;
+			buildPhases = (
+				B5E8EF7E1C84A32800D977DF /* Sources */,
+				B5E8EF7F1C84A32800D977DF /* Frameworks */,
+				B5E8EF801C84A32800D977DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5E8EF841C84A32800D977DF /* PBXTargetDependency */,
+			);
+			name = "HandWriting-LearnerTests";
+			productName = "HandWriting-LearnerTests";
+			productReference = B5E8EF821C84A32800D977DF /* HandWriting-LearnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5E8EF661C84A32800D977DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Alban Perli";
+				TargetAttributes = {
+					B5E8EF6D1C84A32800D977DF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					B5E8EF811C84A32800D977DF = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = B5E8EF6D1C84A32800D977DF;
+					};
+				};
+			};
+			buildConfigurationList = B5E8EF691C84A32800D977DF /* Build configuration list for PBXProject "HandWriting-Learner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5E8EF651C84A32800D977DF;
+			productRefGroup = B5E8EF6F1C84A32800D977DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5E8EF6D1C84A32800D977DF /* HandWriting-Learner */,
+				B5E8EF811C84A32800D977DF /* HandWriting-LearnerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5E8EF6C1C84A32800D977DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50C717B1C8F38A3003D6EC1 /* Brandon_reg_it.otf in Resources */,
+				B50C71771C8F38A3003D6EC1 /* Brandon_light_it.otf in Resources */,
+				B50C71781C8F38A3003D6EC1 /* Brandon_med.otf in Resources */,
+				B50C717D1C8F38A3003D6EC1 /* Brandon_thin_it.otf in Resources */,
+				B5E8EF7C1C84A32800D977DF /* LaunchScreen.storyboard in Resources */,
+				B5E8EF791C84A32800D977DF /* Assets.xcassets in Resources */,
+				B50C71741C8F38A3003D6EC1 /* Brandon_blk.otf in Resources */,
+				B50C71761C8F38A3003D6EC1 /* Brandon_light.otf in Resources */,
+				B5E8EF771C84A32800D977DF /* Main.storyboard in Resources */,
+				B50C71791C8F38A3003D6EC1 /* Brandon_med_it.otf in Resources */,
+				B50C717C1C8F38A3003D6EC1 /* Brandon_thin.otf in Resources */,
+				B50C71721C8F38A3003D6EC1 /* Brandon_bld.otf in Resources */,
+				B50C71731C8F38A3003D6EC1 /* Brandon_bld_it.otf in Resources */,
+				B50C71751C8F38A3003D6EC1 /* Brandon_blk_it.otf in Resources */,
+				B50C717A1C8F38A3003D6EC1 /* Brandon_reg.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5E8EF801C84A32800D977DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5E8EF6A1C84A32800D977DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E8EFA61C84A3AF00D977DF /* UIImage+Processing.swift in Sources */,
+				B5E8EFA01C84A35A00D977DF /* Random.swift in Sources */,
+				B5E8EFA31C84A35A00D977DF /* Vector.swift in Sources */,
+				B5E8EF9D1C84A35A00D977DF /* FFNN.swift in Sources */,
+				B5E8EF931C84A34600D977DF /* HistoryTableViewCell.swift in Sources */,
+				B5E8EF9E1C84A35A00D977DF /* Matrix.swift in Sources */,
+				B50C71641C8F1BA7003D6EC1 /* SetupViewController.swift in Sources */,
+				B5E8EF9F1C84A35A00D977DF /* Operations.swift in Sources */,
+				B5E8EFA91C84A45700D977DF /* FFNNManager.swift in Sources */,
+				B5E8EF9C1C84A35A00D977DF /* FFNN+Storage.swift in Sources */,
+				B5E8EFA11C84A35A00D977DF /* README.md in Sources */,
+				B5E8EF741C84A32800D977DF /* ViewController.swift in Sources */,
+				B5E8EF721C84A32800D977DF /* AppDelegate.swift in Sources */,
+				B5E8EFA21C84A35A00D977DF /* Storage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5E8EF7E1C84A32800D977DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E8EF871C84A32800D977DF /* HandWriting_LearnerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5E8EF841C84A32800D977DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5E8EF6D1C84A32800D977DF /* HandWriting-Learner */;
+			targetProxy = B5E8EF831C84A32800D977DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5E8EF751C84A32800D977DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5E8EF761C84A32800D977DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5E8EF7A1C84A32800D977DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5E8EF7B1C84A32800D977DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5E8EF891C84A32800D977DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5E8EF8A1C84A32800D977DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5E8EF8C1C84A32800D977DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HandWriting-Learner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alban-perli.HandWriting-Learner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5E8EF8D1C84A32800D977DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HandWriting-Learner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alban-perli.HandWriting-Learner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B5E8EF8F1C84A32800D977DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "HandWriting-LearnerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alban-perli.HandWriting-LearnerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandWriting-Learner.app/HandWriting-Learner";
+			};
+			name = Debug;
+		};
+		B5E8EF901C84A32800D977DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "HandWriting-LearnerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alban-perli.HandWriting-LearnerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandWriting-Learner.app/HandWriting-Learner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5E8EF691C84A32800D977DF /* Build configuration list for PBXProject "HandWriting-Learner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5E8EF891C84A32800D977DF /* Debug */,
+				B5E8EF8A1C84A32800D977DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5E8EF8B1C84A32800D977DF /* Build configuration list for PBXNativeTarget "HandWriting-Learner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5E8EF8C1C84A32800D977DF /* Debug */,
+				B5E8EF8D1C84A32800D977DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5E8EF8E1C84A32800D977DF /* Build configuration list for PBXNativeTarget "HandWriting-LearnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5E8EF8F1C84A32800D977DF /* Debug */,
+				B5E8EF901C84A32800D977DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5E8EF661C84A32800D977DF /* Project object */;
+}
