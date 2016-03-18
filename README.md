@@ -7,8 +7,13 @@ This project is based on [Swift-AI](https://github.com/collinhundley/Swift-AI)
 
 ###[Here is the companion article.](http://curly-braces.org/hand-writing-recognition-ios-exp1/)
 
+<div style="text-align:center" markdown="1">
+
 #### Simple demo of a network trained
 ![alt tag](/HandWriting-iOS.gif)
+
+</div>
+
 
 
 
