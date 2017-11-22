@@ -1,0 +1,57 @@
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+!*.xcworkspace/contents.xcworkspacedata
+
+## Other
+*.moved-aside
+*.xcuserstate
+
+## Sourcery
+default.profraw
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Packages/
+.build/
+
+## CocoaPods
+Pods/
+
+## Carthage
+Carthage/Build
+
+## fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+## FBSnapshotTestCase
+FailureDiffs/
+
+## Deployment scripts
+.setup_travis_deployment.sh
+.match_key
+
+## AppCode
+.idea/

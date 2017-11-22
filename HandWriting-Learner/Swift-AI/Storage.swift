@@ -14,10 +14,10 @@ import Foundation
 
 public protocol Storage {
     
-    typealias StorageType
-    func writeToFile(filename: String)
-    func writeToFile(url: NSURL)
-    static func fromFile(filename: String) -> StorageType?
-    static func fromFile(url: NSURL) -> StorageType?
+    associatedtype StorageType
+    func writeToFile(_ filename: String)
+    func writeToFile(_ url: URL)
+    static func fromFile(_ filename: String) -> StorageType?
+    static func fromFile(_ url: URL) -> StorageType?
 
 }

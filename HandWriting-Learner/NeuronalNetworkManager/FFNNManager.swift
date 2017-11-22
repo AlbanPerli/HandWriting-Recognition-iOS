@@ -14,17 +14,17 @@ class FFNNManager: NSObject {
     // Initialize neural network with pre-trained weights (may need to change activation function if yours was trained with a different one)
     var network:FFNN?
     
-    func createNetwork(inputs: Int, hidden: Int, outputs:Int, learningRate: Float, momentum:Float){
+    func createNetwork(_ inputs: Int, hidden: Int, outputs:Int, learningRate: Float, momentum:Float){
         // Initialize neural network with pre-trained weights (may need to change activation function if yours was trained with a different one)
-        network = FFNN(inputs: inputs, hidden:hidden , outputs: outputs, learningRate: learningRate, momentum: momentum, weights:nil, activationFunction: .Sigmoid, errorFunction: .Default(average: false))
+        network = FFNN(inputs: inputs, hidden:hidden , outputs: outputs, learningRate: learningRate, momentum: momentum, weights:nil, activationFunction: .Sigmoid, errorFunction: .default(average: false))
         
     }
     
-    func createNetworkFromFileName(fileName:String){
+    func createNetworkFromFileName(_ fileName:String){
         network = FFNN.fromFile(fileName)
     }
     
-    func trainNetwork(inputs:[Float],answer:[Float], epoch:Int)->(output:[Float],error:Float){
+    func trainNetwork(_ inputs:[Float],answer:[Float], epoch:Int)->(output:[Float],error:Float){
         
         guard network != nil else {
             return ([],-1.0)
@@ -40,7 +40,7 @@ class FFNNManager: NSObject {
         
     }
     
-    func predictionForInput(input:[Float])->[Float]{
+    func predictionForInput(_ input:[Float])->[Float]{
         return try! network!.update(inputs: input)
     }
     
@@ -49,11 +49,11 @@ class FFNNManager: NSObject {
         return network!.getWeights()
     }
     
-    func setNewWeight(weights:[Float]){
+    func setNewWeight(_ weights:[Float]){
         try! network!.resetWithWeights(weights)
     }
     
-    func saveNetworkWithName(name:String){
+    func saveNetworkWithName(_ name:String){
         FFNNManager.instance.network?.writeToFile(name)
     }
     

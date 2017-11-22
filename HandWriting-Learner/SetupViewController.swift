@@ -24,35 +24,35 @@ class SetupViewController: UIViewController {
     @IBOutlet weak var momentumTxtField: UITextField!
     @IBOutlet weak var learningRateTxtField: UITextField!
 
-    @IBAction func loadBtnClicked(sender: UIButton) {
+    @IBAction func loadBtnClicked(_ sender: UIButton) {
         
         if !networkNameIsEmpty() {
             FFNNManager.instance.createNetworkFromFileName(self.networkName)
-            self.performSegueWithIdentifier("toNetwork", sender: self)
+            self.performSegue(withIdentifier: "toNetwork", sender: self)
         }else{
-            let alert = UIAlertController(title: AlertTextConst.kAlertTitle, message: AlertTextConst.kLoadAlertText, preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            let alert = UIAlertController(title: AlertTextConst.kAlertTitle, message: AlertTextConst.kLoadAlertText, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             
-            self.presentViewController(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
         }
         
     }
     
-    @IBAction func newNetworkBtnClicked(sender: AnyObject) {
+    @IBAction func newNetworkBtnClicked(_ sender: AnyObject) {
         
         if !networkNameIsEmpty()
             && !learningRateIsEmpty()
             && !momentumIsEmpty() {
                 
             FFNNManager.instance.createNetwork(30*30, hidden: 601, outputs: 4, learningRate: Float(learningRate)!, momentum: Float(momentum)!)
-            self.performSegueWithIdentifier("toNetwork", sender: self)
+            self.performSegue(withIdentifier: "toNetwork", sender: self)
                 
         }else{
             
-            let alert = UIAlertController(title: AlertTextConst.kAlertTitle, message: AlertTextConst.kCreateAlertText, preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            let alert = UIAlertController(title: AlertTextConst.kAlertTitle, message: AlertTextConst.kCreateAlertText, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             
-            self.presentViewController(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
         }
         
     }
@@ -104,13 +104,13 @@ class SetupViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "toNetwork"{
             
-            let vc : ViewController = segue.destinationViewController as! ViewController
+            let vc : ViewController = segue.destination as! ViewController
             vc.currentNetworkName = networkName
             
         }
