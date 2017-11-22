@@ -91,7 +91,7 @@ class ViewController: UIViewController,UITableViewDataSource {
             }
             
             let trainingValues = FFNNManager.instance.trainNetwork(pixelArray!, answer:answer, epoch: 1)
-            let result = String(trainingValues.output)
+            let result = String(describing: trainingValues.output)
             
             self.result.text = result
             
