@@ -43,7 +43,7 @@ class ViewController: UIViewController,UITableViewDataSource {
         
         let framedImg = self.framedImg()
         
-        let resizedImg = framedImg!.toSize(CGSizeMake(30, 30))
+        let resizedImg = framedImg!.toSize(CGSize(width: 30, height: 30))
         
         return (resizedImg.pixelsArray().pixelValues,resizedImg)
     }
@@ -56,8 +56,8 @@ class ViewController: UIViewController,UITableViewDataSource {
         
         let freeSpaceAroundDrawinFrame:CGFloat = 5.0
         
-        let topLeft = CGPointMake(CGFloat(xPoints.minElement()!), CGFloat(yPoints.minElement()!))
-        let bottomRight = CGPointMake(CGFloat(xPoints.maxElement()!), CGFloat(yPoints.maxElement()!))
+        let topLeft = CGPoint(x: CGFloat(xPoints.min()!), y: CGFloat(yPoints.min()!))
+        let bottomRight = CGPoint(x: CGFloat(xPoints.max()!), y: CGFloat(yPoints.max()!))
         
         return self.imageView.image!.extractFrame(topLeft,bottomRight: bottomRight, pixelMargin: freeSpaceAroundDrawinFrame)
     }
@@ -95,7 +95,7 @@ class ViewController: UIViewController,UITableViewDataSource {
             
             self.result.text = result
             
-            historyDatasource.insert(NSDictionary(dictionaryLiteral: ("img",img),("result",result)), atIndex: 0)
+            historyDatasource.insert(NSDictionary(dictionaryLiteral: ("img",img),("result",result)), at: 0)
             
             tableView.reloadData()
             
@@ -122,7 +122,7 @@ class ViewController: UIViewController,UITableViewDataSource {
             
             print(output)
             
-            let maxValue = output.maxElement()!
+            let maxValue = output.max()!
             
             // Not sure enough
             if maxValue < 0.8 {
@@ -132,7 +132,7 @@ class ViewController: UIViewController,UITableViewDataSource {
             
             // Convert the max value (> 0.8) to int to get 
             // the index value of the switch
-            let index = output.indexOf(maxValue)! as Int
+            let index = output.index(of: maxValue)! as Int
             
             self.segmented.selectedSegmentIndex = index
             
@@ -153,22 +153,22 @@ class ViewController: UIViewController,UITableViewDataSource {
     
     //MARK: UI Actions
     
-    @IBAction func trainingModeSwitchDidChangeValue(sender: UISwitch) {
+    @IBAction func trainingModeSwitchDidChangeValue(_ sender: UISwitch) {
         
-        if sender.on {
+        if sender.isOn {
             actionButton.title = "Train"
         }else {
             actionButton.title = "Ask"
         }
         
-        self.tableView.hidden = !sender.on
-        self.result.hidden = !sender.on
+        self.tableView.isHidden = !sender.isOn
+        self.result.isHidden = !sender.isOn
 
     }
     
-    @IBAction func actionBtnClicked(sender: AnyObject) {
+    @IBAction func actionBtnClicked(_ sender: AnyObject) {
         
-        if trainingSwitch.on {
+        if trainingSwitch.isOn {
             trainNeurons()
         }else{
             askNeurons()
@@ -184,10 +184,10 @@ class ViewController: UIViewController,UITableViewDataSource {
     }
     
     
-    @IBAction func saveNetworkBtnClicked(sender: AnyObject) {
+    @IBAction func saveNetworkBtnClicked(_ sender: AnyObject) {
         self.imageView.image = nil
         FFNNManager.instance.saveNetworkWithName(currentNetworkName)
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     
@@ -197,7 +197,7 @@ class ViewController: UIViewController,UITableViewDataSource {
         // Do any additional setup after loading the view, typically from a nib
         
         self.imageView.layer.borderWidth = 1.0
-        self.imageView.layer.borderColor = UIColor.grayColor().CGColor
+        self.imageView.layer.borderColor = UIColor.gray.cgColor
         
         self.tableView.dataSource = self
         
@@ -211,50 +211,50 @@ class ViewController: UIViewController,UITableViewDataSource {
     
     
     //MARK: TableView Datasource
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("historyCell", forIndexPath: indexPath) as! HistoryTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as! HistoryTableViewCell
         
         let dico = historyDatasource[indexPath.row]
         
         cell.sentImg.image = dico["img"] as? UIImage
         cell.sentImg.layer.borderWidth = 1.0
-        cell.sentImg.layer.borderColor = UIColor.grayColor().CGColor
+        cell.sentImg.layer.borderColor = UIColor.gray.cgColor
         
         cell.predictionLabel.text = dico["result"] as? String
         
         return cell
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return historyDatasource.count
     }
     
     
     
     //MARK: Drawing methods
-    override func touchesBegan(touches: Set<UITouch>,
-        withEvent event: UIEvent?){
+    override func touchesBegan(_ touches: Set<UITouch>,
+        with event: UIEvent?){
             isSwiping    = false
             let touch = touches.first
-            lastPoint = touch!.locationInView(imageView)
+            lastPoint = touch!.location(in: imageView)
             xPoints.append(Float(lastPoint.x))
             yPoints.append(Float(lastPoint.y))
     }
     
-    override func touchesMoved(touches: Set<UITouch>,
-        withEvent event: UIEvent?){
+    override func touchesMoved(_ touches: Set<UITouch>,
+        with event: UIEvent?){
             
             isSwiping = true;
             let touch = touches.first
-            let currentPoint = touch!.locationInView(imageView)
+            let currentPoint = touch!.location(in: imageView)
             UIGraphicsBeginImageContext(self.imageView.frame.size)
-            self.imageView.image?.drawInRect(CGRectMake(0, 0, self.imageView.frame.size.width, self.imageView.frame.size.height))
-            CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y)
-            CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), currentPoint.x, currentPoint.y)
-            CGContextSetLineCap(UIGraphicsGetCurrentContext(),CGLineCap.Round)
-            CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 9.0)
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(),0.0, 0.0, 0.0, 1.0)
-            CGContextStrokePath(UIGraphicsGetCurrentContext())
+            self.imageView.image?.draw(in: CGRect(x: 0, y: 0, width: self.imageView.frame.size.width, height: self.imageView.frame.size.height))
+            UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+            UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: currentPoint.x, y: currentPoint.y))
+            UIGraphicsGetCurrentContext()?.setLineCap(CGLineCap.round)
+            UIGraphicsGetCurrentContext()?.setLineWidth(9.0)
+            UIGraphicsGetCurrentContext()?.setStrokeColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+            UIGraphicsGetCurrentContext()?.strokePath()
             self.imageView.image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             lastPoint = currentPoint
@@ -262,18 +262,18 @@ class ViewController: UIViewController,UITableViewDataSource {
             yPoints.append(Float(lastPoint.y))
     }
     
-    override func touchesEnded(touches: Set<UITouch>,
-        withEvent event: UIEvent?){
+    override func touchesEnded(_ touches: Set<UITouch>,
+        with event: UIEvent?){
             if(!isSwiping) {
                 // This is a single touch, draw a point
                 UIGraphicsBeginImageContext(self.imageView.frame.size)
-                self.imageView.image?.drawInRect(CGRectMake(0, 0, self.imageView.frame.size.width, self.imageView.frame.size.height))
-                CGContextSetLineCap(UIGraphicsGetCurrentContext(), CGLineCap.Round)
-                CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 9.0)
-                CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 0.0, 1.0)
-                CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y)
-                CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y)
-                CGContextStrokePath(UIGraphicsGetCurrentContext())
+                self.imageView.image?.draw(in: CGRect(x: 0, y: 0, width: self.imageView.frame.size.width, height: self.imageView.frame.size.height))
+                UIGraphicsGetCurrentContext()?.setLineCap(CGLineCap.round)
+                UIGraphicsGetCurrentContext()?.setLineWidth(9.0)
+                UIGraphicsGetCurrentContext()?.setStrokeColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+                UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+                UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+                UIGraphicsGetCurrentContext()?.strokePath()
                 self.imageView.image = UIGraphicsGetImageFromCurrentImageContext()
                 UIGraphicsEndImageContext()
             }
