@@ -145,17 +145,17 @@
 		B5E8EF701C84A32800D977DF /* HandWriting-Learner */ = {
 			isa = PBXGroup;
 			children = (
-				B5E8EFAA1C84A45A00D977DF /* NeuronalNetworkManager */,
-				B5E8EFA71C84A3D400D977DF /* UIImage-Extension */,
-				B5E8EFA41C84A35F00D977DF /* Swift-AI */,
 				B5E8EF911C84A33D00D977DF /* HistoryCell */,
+				B5E8EFAA1C84A45A00D977DF /* NeuronalNetworkManager */,
+				B5E8EFA41C84A35F00D977DF /* Swift-AI */,
+				B5E8EFA71C84A3D400D977DF /* UIImage-Extension */,
 				B5E8EF711C84A32800D977DF /* AppDelegate.swift */,
+				B5E8EF781C84A32800D977DF /* Assets.xcassets */,
+				B5E8EF7D1C84A32800D977DF /* Info.plist */,
+				B5E8EF7A1C84A32800D977DF /* LaunchScreen.storyboard */,
+				B5E8EF751C84A32800D977DF /* Main.storyboard */,
 				B50C71631C8F1BA7003D6EC1 /* SetupViewController.swift */,
 				B5E8EF731C84A32800D977DF /* ViewController.swift */,
-				B5E8EF751C84A32800D977DF /* Main.storyboard */,
-				B5E8EF781C84A32800D977DF /* Assets.xcassets */,
-				B5E8EF7A1C84A32800D977DF /* LaunchScreen.storyboard */,
-				B5E8EF7D1C84A32800D977DF /* Info.plist */,
 			);
 			path = "HandWriting-Learner";
 			sourceTree = "<group>";
@@ -175,6 +175,7 @@
 				B5E8EF921C84A34600D977DF /* HistoryTableViewCell.swift */,
 			);
 			name = HistoryCell;
+			path = HistoryCell;
 			sourceTree = "<group>";
 		};
 		B5E8EFA41C84A35F00D977DF /* Swift-AI */ = {
@@ -184,12 +185,13 @@
 				B5E8EF951C84A35A00D977DF /* FFNN.swift */,
 				B5E8EF961C84A35A00D977DF /* Matrix.swift */,
 				B5E8EF971C84A35A00D977DF /* Operations.swift */,
-				B5E8EF981C84A35A00D977DF /* Random.swift */,
 				B5E8EF991C84A35A00D977DF /* README.md */,
+				B5E8EF981C84A35A00D977DF /* Random.swift */,
 				B5E8EF9A1C84A35A00D977DF /* Storage.swift */,
 				B5E8EF9B1C84A35A00D977DF /* Vector.swift */,
 			);
 			name = "Swift-AI";
+			path = "Swift-AI";
 			sourceTree = "<group>";
 		};
 		B5E8EFA71C84A3D400D977DF /* UIImage-Extension */ = {
@@ -198,6 +200,7 @@
 				B5E8EFA51C84A3AF00D977DF /* UIImage+Processing.swift */,
 			);
 			name = "UIImage-Extension";
+			path = "UIImage-Extension";
 			sourceTree = "<group>";
 		};
 		B5E8EFAA1C84A45A00D977DF /* NeuronalNetworkManager */ = {
@@ -206,6 +209,7 @@
 				B5E8EFA81C84A45700D977DF /* FFNNManager.swift */,
 			);
 			name = NeuronalNetworkManager;
+			path = NeuronalNetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +367,7 @@
 				B5E8EF761C84A32800D977DF /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		B5E8EF7A1C84A32800D977DF /* LaunchScreen.storyboard */ = {
@@ -371,6 +376,7 @@
 				B5E8EF7B1C84A32800D977DF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
