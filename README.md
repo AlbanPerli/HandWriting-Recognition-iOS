@@ -1,5 +1,5 @@
 # HandWriting-Recognition-iOS
-Artisanal and basic Handwriting recognition system for iOS, based on a Fast Forward Neural Network
+Artisanal and basic Handwriting recognition system for iOS, based on a Feed Forward Neural Network
 
 This project uses [Swift-AI](https://github.com/collinhundley/Swift-AI) 
 
